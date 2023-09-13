@@ -23,8 +23,12 @@ function iniciarJuego() {
   );
 }
 function reiniciar() {
+  
   grillas.forEach((grilla) => (grilla.innerHTML = ""));
+  contador = 0;
+  console.log(contador)//reinicia el contador
   iniciarJuego();
+
 }
 function grillaPresionada(e) {
   if (e.target.innerHTML == "") {
